@@ -15,8 +15,9 @@ export const textVide = (text: string, maybeOptions: Partial<Options> = {}) => {
 
   let result = "";
   let lastMatchedIndex = 0;
-
+//@ts-ignore 
   for (const match of convertibleMatchList) {
+    //@ts-ignore 
     const startIndex = match.index!;
     const endIndex = startIndex + getFixationLength(match[0], fixationPoint);
 
